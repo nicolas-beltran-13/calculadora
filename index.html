@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>calculadora</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1> Calculadora de Inscripcion</h1>
-        <p class="subtitulo"> Sistema para calculo de Inscripcion de afiliados </p>
-        <form id = "calculadora ">
-            <div class="form-group">
+      <h1>Calculadora de Inscripcion</h1>
+      <p class="subtitulo">Sistema para calculo de Inscripcion de afiliados</p>
+      <form id="calculadora ">
+        <div class="form-group">
+          <label for="Tipodeafiliado"> Tipo de afiliado:</label>
 
-                <label for="Tipodeafiliado"> Tipo de afiliado:</label>
-                
-                <select id="Tipodeafiliado" required>
-                
-                <option value="" disabled selected>Seleccione alguna opcion</option>
-                <option value="Asociado"> Asocioado </option>
-                <option value="Noasociado"> No Asociado </option>
-                <option value="Extranjero"> Extranjero </option>
-            
-            </select>
-            </div>
-        
-            <div class="form-group">
-            
-            <label for="TarifaInscripcion">Tarifa de Inscripcion:</label>
-            
-            <select id="TarifaInscripcion" required>
-                
-                <option value="">Seleccione un tipo de Inscripcion </option>
-                <option value="500000">Comprador: 500.000 </option>
-                <option value="400000">Vendedor: 400.000 </option>
-                <option value="120000">Expositor: 120.000</option>
-        
-            </select>
+          <select id="Tipodeafiliado" required>
+            <option value="" disabled selected>Seleccione alguna opcion</option>
+            <option value="Asociado">Asocioado</option>
+            <option value="Noasociado">No Asociado</option>
+            <option value="Extranjero">Extranjero</option>
+          </select>
         </div>
 
-        <button type="submit"> Calcular Valores </button>
-           
-    </form>
-             
+        <div class="form-group">
+          <label for="TarifaInscripcion">Tarifa de Inscripcion:</label>
+
+          <select id="TarifaInscripcion" required>
+            <option value="">Seleccione un tipo de Inscripcion</option>
+            <option value="500000">Comprador: 500.000</option>
+            <option value="400000">Vendedor: 400.000</option>
+            <option value="120000">Expositor: 120.000</option>
+          </select>
+        </div>
+
+        <button type="submit">Calcular Valores</button>
+      </form>
+
+      <div id="resultados" class="resultados">
+        <div class="valores">
+          <span id="valor_label">Valor Base:</span>
+          <span id="valor_value" id="valorBase"></span>
+        </div>
+
+        <div class="valores"></div>
+
+        <span class="valor_label">Iva 19% :</span>
+        <span class="valor_value" id="valorIva"></span>
+      </div>
+
+      <div class="valores">
+        <span class="valor_label">Subtotal:</span>
+        <span class="valor_value" id="subtotal"></span>
+      </div>
+      <div class="valores">
+        <span class="valor_label">Ajuste:</span>
+        <span class="valor_value" id="ajuste"></span>
+      </div>
+
+      <div class="total">
+        <div class="valores">
+          <span class="valor_label">Total a Pagar:</span>
+          <span class="valor_value" id="total"></span>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
