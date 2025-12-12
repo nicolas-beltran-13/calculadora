@@ -5,7 +5,8 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background:  linear-gradient(140deg, rgba(211, 0, 0, 0.881) 0%, rgba(236, 113, 12, 0.885) 35%, rgb(255, 0, 0) 100%);
+    background:  linear-gradient(140deg, rgba(0, 0, 0, 0.881) 0%, 
+    rgba(42, 20, 43, 0.885) 35%, rgb(28, 0, 39) 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -15,7 +16,7 @@ body{
     padding: 30px;
 }
 .container {
-    background-color: rgba(184, 43, 0, 0.917);
+    background-color: rgba(3, 0, 4, 0.917);
     border-radius: 50px;
     box-shadow: 0 20px 60px 0 rgb(29, 1, 1);
     max-width: 800px;
@@ -23,13 +24,13 @@ body{
     padding: 80px;
 }   
 h1 {
-    color: black;
+    color: rgb(143, 10, 130);
     margin-bottom: 25px;
     font-size: 40px;
     text-align: center;
 }
 .subtitulo {
-    color: black;
+    color: rgb(143, 10, 130);
     font-size: 30px;
     margin-bottom: 0px;
     text-align: center;
@@ -41,18 +42,18 @@ h1 {
 label {
     display: block;
     margin-bottom: 5px;
-    color: black;
+    color: rgb(143, 10, 130);
     font-weight: 300;
     font-size: 20px;
 }
 select {
     width: 100%;
     padding: 15px;
-    border: 2px solid #7a0000;
+    border: 2px solid #d000ff;
     border-radius: 10px;
     font-size: 8px;
     transition: all 0.5s;
-    background-color: #f2a06d;
+    background-color: #7b069f;
     cursor: pointer;
 }
 select:focus {
@@ -61,7 +62,7 @@ select:focus {
 }
 button {
     width: 70%;
-    background: linear-gradient(140deg, #ff0501 0%, #f37303 100%);
+    background: linear-gradient(140deg, #d600fc 0%, #38013a 100%);
     color: rgba(0, 0, 0, 0.785);
     border: 0ch;
     border-radius: 60px;
@@ -80,14 +81,14 @@ button:active {
 .resultado {
     margin-top: 20px;
     padding: 10px;
-    background-color: rgba(7, 0, 0, 0.596);
+    background-color: rgba(173, 37, 218, 0.596);
     border-radius: 20px;
     box-shadow: 0 10px 30px 0 rgb(7, 0, 0);
     display: none;
 }
 .resultado.show {
     display: block;
-    animation: 1s;;
+    animation:alternate 1s;
 }
 @keyframes show {
     from {
@@ -115,7 +116,7 @@ button:active {
     color: rgb(15, 15, 15);
 }
 .total{
-    background: linear-gradient(140deg, #7a0705 0%, #6f060615 100%);
+    background: linear-gradient(140deg, #bc07f4 0%, #20012b15 100%);
     color: #000000;
     padding: 15px;
     border-radius: 20px;
